@@ -1,25 +1,32 @@
 #include <iostream>
+#include <math.h>
 
 using namespace std;
 
 int main(){
     cout << "Week 2 Lab:" << endl;
-    int bob;
-    int john;
-
-    bob = 42;
-    john = 32;
+    
+    int bob = 42;
+    int john = 32;
     int jimbob = bob + john;
     short rachel = 10;
     short luke = 7;
     float pie = 3.14;
     char middle = 'M';
+    bool shouldWe = false;
 
-    cout << "Bob and John together are " << jimbob << " years old" << endl;
+    if('M' == middle){
+        cout << "The result was true" << endl;
+    } else {
+        cout << "FALSE!!" << endl;
+    }
 
-    cout << middle << " is the middle initial ";
-    cout << pie << " users that are " << luke;
-    cout << " years old.";
+    cout << jimbob << " is bob and jom added" << endl;
+    cout << bob - john << " is bob and jim subtracted" << endl;
+    cout << bob / john << " is bob and jim divided" << endl;
+    cout << bob * john << " is bob and jim multiplied" << endl;
+    cout << bob % john << " is bob modulas jim" << endl;
+    cout << pow (bob, john) << " is bob to the john power" << endl; //need #include <math.h>
 
     return 0;
 }
